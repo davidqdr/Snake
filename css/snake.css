@@ -1,0 +1,121 @@
+body {
+	background-color: #3B623B;
+	color: #fff;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0;
+}
+.mycell{
+	width:17px;
+	height:17px;
+	float:left;
+}
+.sel{
+	background-image: url('snake_animated.gif');
+	background-size: cover;
+}
+.selA{
+	background-image:url('apple.png');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+/* css for the shiny buttons */
+button:focus {
+	outline: none;
+}
+
+.btn {
+  width: 100%;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  display: inline-block;
+}
+
+#newgame {
+	visibility: hidden;
+}
+
+.white {
+  color: #fff;
+  border: 2px #fff solid;
+  background-color: transparent;
+  background-repeat:no-repeat;
+}
+
+.white:hover {
+  color: #3B623B;
+  background-color: #fff;
+}
+
+button.keypad{
+	width:60px; /*same as the height*/
+	height:60px; /*same as the width*/
+	background-color:#ff0000;
+	border:1px solid #ff0000; /*same colour as the background*/
+	/* color:#3B623B; */
+	color: #fff;
+	font-size:2.5em;
+	/*set the border-radius at half the size of the width and height*/
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	/*give the button a small drop shadow*/
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 8px rgba(0,0,0, .75);
+	box-shadow: 2px 2px 12px rgba(0,0,0, .75);
+}
+/***NOW STYLE THE BUTTON'S HOVER STATE***/
+button.keypad:hover{
+	background:#c20b0b;
+	border:1px solid #c20b0b;
+	/*reduce the size of the shadow to give a pushed effect*/
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+	box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+}
+.titulo {
+	font-size: 25px;
+}
+.score {
+	margin-left: 15px;
+	font-size: 15px;
+}
+#div_main {
+	width:340px;
+	height:340px;
+	padding:0px;
+	margin:0px;
+	border:2px solid #003366;
+	background-image: url('grass.gif');
+	background-repeat: repeat;
+}
+#gameover {
+	visibility: hidden;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background-color: #CCC;
+	font-size: 2em;
+	font-weight: bold;
+	color: red;
+	opacity: 0.5;
+	width: 340px;
+	height: 340px;
+	z-index: 999;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 340px;
+}
+
+table {
+	border-spacing: 0;
+    border-collapse: collapse;
+}
